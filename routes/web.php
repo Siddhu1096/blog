@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/hello','hellocontroller@index');
-Route::post('hello','helloController@add');
+Route::get('hello1','multiController@index');
+Route::post('hello1','multiController@product');
 
