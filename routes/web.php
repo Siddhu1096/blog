@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('hello');
 });
+
+Route::get('/hello','hellocontroller@index');
+Route::post('hello','helloController@add');
+
